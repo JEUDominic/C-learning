@@ -18,3 +18,13 @@
 	I have to learn what waiting on my road.
 	Keep moving and studying code.
 	Because I'm the one be choesed.
+
+	
+**20151025 ResizableArrray**
+
+	Life is so busysysysysysy.
+`Short Missions`
+	
+	C learning;
+	MCM->Matlab;
+	GRE;
