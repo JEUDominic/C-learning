@@ -2,10 +2,12 @@
 #include<stlib.h>
 Block_SIZE = 20;
 
+//Rename a specific struct...
 typedef struct{
 	int *array;
 	int size;
 }Array;
+
 
 Array array_create(int init_size){
 	Array a;
