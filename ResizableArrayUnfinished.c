@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stlib.h>
-Block_SIZE = 20;
+int Block_SIZE = 20;
 
 //Rename a specific struct...
 typedef struct{
@@ -26,9 +26,20 @@ void array_size(const Array *a){
 	return a->size;
 }
 
+void array_inflate(Array *a, int more_size){
+    int *p = (int*)malloc(sizeof(int)(a->size + more_size));
+    int i;
+    for ( i = 0; i < a->size; i++){
+        p[i] = a->array[i];
+    }
+    free(a->array);
+    a->array = p;
+    a->size += more_size;
+}
+
 void array_at(Array *a, int index){
 	if(index >= a->size){
-		array_inflate(a,(index/BLOCK_SIZE + 1)*BLOCK_SIZE - a->size);
+		array_inflate(a,(index/Block_SIZE + 1)*Block_SIZE - a->size);
 	}
 }
 
@@ -39,17 +50,6 @@ void array_get(const Arrray *a, int index){
 void array_set(Array *a, int index, int value){
 	a->array[index] = value;
 	
-}
-
-void array_inflate(Array *a, int more_size){
-	int *p = (int*)malloc(sizeof(int)(a->size + more_size));
-	int i;
-	for ( i = 0; i < a->size; i++){
-		p[i] = a->array[i];
-	}
-	free(a->array);
-	a->array = p;
-	a->size += more_size;
 }
 
 int main(int argc, char const *argv[]){
