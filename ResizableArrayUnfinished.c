@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<stlib.h>
+#include<stdlib.h>
 int Block_SIZE = 20;
 
 //Rename a specific struct...
@@ -18,11 +18,11 @@ Array array_create(int init_size){
 
 void array_free(Array *a){
 	free(a->array);
-	a->array = null;
+	a->array = NULL;
 	a->size = 0;
 }
 
-void array_size(const Array *a){
+int array_size(const Array *a){
 	return a->size;
 }
 
@@ -43,11 +43,11 @@ void array_at(Array *a, int index){
 	}
 }
 
-void array_get(const Arrray *a, int index){
+int array_get(const Array *a, int index){
 	return a->array[index];
 }
 
-void array_set(Array *a, int index, int value){
+int array_set(Array *a, int index, int value){
 	a->array[index] = value;
 	
 }
