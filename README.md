@@ -28,8 +28,13 @@
 	C learning;
 	MCM->Matlab;
 	GRE;
-**20151026 **
+**20151026**
 
 	Install Matlab successfully.
+**20151228**
+	
+	I am so careless.
+	From the first day I learning linear algebra, I have not calculated even a right answer.
+	Linear Algebra Midterm, SORRY.
 	
 	
