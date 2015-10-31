@@ -31,10 +31,14 @@
 **20151026**
 
 	Install Matlab successfully.
-**20151228**
+**20151028**
 	
 	I am so careless.
 	From the first day I learning linear algebra, I have not calculated even a right answer.
 	Linear Algebra Midterm, SORRY.
 	
+**20151030**
 	
+	C programming lab task2.
+	A meaningful task.
+	I want to figure out how to return a array(max&min), then I found in exchange funtion it can change the orginal array. So I just need to use a void funtion and printf the max&min in the value array in main funtion.
