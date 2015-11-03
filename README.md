@@ -42,3 +42,8 @@
 	C programming lab task2.
 	A meaningful task.
 	I want to figure out how to return a array(max&min), then I found in exchange funtion it can change the orginal array. So I just need to use a void funtion and printf the max&min in the value array in main funtion.
+	
+**20151102**
+
+	Yesterday Signed the GRE test.
+	FIGHTTING!
