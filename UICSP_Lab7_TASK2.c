@@ -6,7 +6,7 @@
 //  Recode by JEU.20151102 Add Comments.
 
 #include<stdio.h>
-float* exchange(float a[], int n);//Function prototype...
+float* exchange(float a[], int n);// Buble sorting...
 
 int main(){
 	int i = 0;
