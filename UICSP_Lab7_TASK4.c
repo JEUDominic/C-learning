@@ -1,6 +1,10 @@
-//Code by Alicia.20151030
-//Recode by Alicia.20151031
-//Recode by Alicia.20151105
+//
+//  TASK4
+//  Lab7
+//
+//  Created by JEU.20151030
+//  Recode by JEU.20151031
+//  Recode by JEU.20151105
 
 #include<stdio.h>
 #define NUM 50
