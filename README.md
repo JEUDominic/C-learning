@@ -47,3 +47,9 @@
 
 	Yesterday Signed the GRE test.
 	FIGHTTING!
+	
+**20151107**
+
+	Nice to met these gugys.
+	站在巨人的肩膀上。
+	
