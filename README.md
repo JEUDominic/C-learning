@@ -53,3 +53,8 @@
 	Nice to met these gugys.
 	站在巨人的肩膀上。
 	
+**20151108**
+	
+	First time design icon.
+	
+	

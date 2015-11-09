@@ -3,7 +3,7 @@
 //  Assignment3
 //
 //  Created by JEU.20151106
-//  Recode by JEU.20151110
+//  Recode by JEU.20151108
 
 #include<stdio.h>
 
