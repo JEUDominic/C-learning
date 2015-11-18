@@ -57,4 +57,10 @@
 	
 	First time design icon.
 	
+**20151118**
+
+	Almost finished GRE3000. 
+	红宝书 begin!!!
+
+	
 	
