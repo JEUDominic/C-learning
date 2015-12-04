@@ -10,3 +10,13 @@
 
 
 **Could you do it without any loop/recursion in O(1) runtime?**
+
+HINT: the remainder of 9
+
+
+##Single Number
+	Given an array of integers, every element appears twice except for one. Find that single one.
+
+**Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?**
+
+HINT: Using XOR.

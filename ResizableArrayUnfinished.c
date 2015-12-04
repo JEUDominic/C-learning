@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-int Block_SIZE = 20;
+#define Block_SIZE 20;
 
 //Rename a specific struct...
 typedef struct{
