@@ -18,6 +18,15 @@
 #include <string.h>
 #include <stdlib.h>
 
+struct items{
+	char name[20];
+	int amount;
+	double price;
+	struct items* next;
+};
+
+
+
 struct items *LoadItemList()
 {
 //This function reads the item list from a file and return the address of the first item in the list.
@@ -38,17 +47,24 @@ struct items *LoadItemList()
 	struct items* node1;
 	struct items* node2;
 	struct items* p;
-	node1 = (struct items*)malloc(sizeof(struct items*));
+	node1 = (struct items*)malloc(sizeof(struct items));
 	head = node1;
 	p = node1;
 	while(fscanf(list,"%s %d %lf",node1->name,&node1->amount,&node1->price) != EOF)
 	{
 		p = node1;
-		node2 = (struct items*)malloc(sizeof(struct items*));
+		node2 = (struct items*)malloc(sizeof(struct items));
 		node1->next = node2;
 		node1 = node2;
 	}
 	p->next = NULL;
+	
+	p =  head;
+	while(p){
+		printf("%i %s %d %.2f %i\n",p,p->name,p->amount,p->price,p->next);
+		p = p->next;
+	}
+		
 	free(node1);
 	fclose(list);
 	
@@ -68,7 +84,7 @@ int StorageItemList(struct items* head)
 		return -1;
 	while(head)
 	{
-		fprintf(list,"\n%s %d %f",head->name,head->amount,head->price);
+		fprintf(list,"%s %d %f\n",head->name,head->amount,head->price);
 		head = head->next;
 	}
 	return 0;
@@ -221,5 +237,16 @@ double CalculatePrice(struct items* head,int amount, int itemID){
 	
 }
 
+int main()
+{
 
+	struct items* head;
+	head = LoadItemList();
+	while(head)
+	{
+		printf("%i %s %d %.2f %i\n",head,head->name,head->amount,head->price,head->next);
+		head = head->next;
+	}
+	return 0;
+}
 
